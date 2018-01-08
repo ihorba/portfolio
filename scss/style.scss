@@ -77,9 +77,9 @@ textarea {
 
 }
 .Rectangle_2_copy {
-  background: -moz-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
-  background: -webkit-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
-  background: -ms-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+	background: -moz-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+	background: -webkit-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+	background: -ms-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
 
 }
 
@@ -204,7 +204,9 @@ textarea {
 		top: -43px;
 		width: 386px;
 		height: 386px;
-		border: 7px solid $secondary-color;
+		border: 7px solid;
+		border-image: linear-gradient(90deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+		border-image-slice: 1;
 		z-index: 1;
 	}
 	&__photo-img {
@@ -214,4 +216,18 @@ textarea {
 		z-index: 2;
 
 	}
+	&__title {
+		background: -moz-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+		background: -webkit-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+		background: -ms-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color:  #00d7bb;
+		display: table;
+		font-size: 45px;
+		font-weight: 700;
+		margin: 0;
+		line-height: 1;
+	}
 }
+

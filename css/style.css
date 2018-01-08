@@ -877,11 +877,29 @@ select {
     top: -43px;
     width: 386px;
     height: 386px;
-    border: 7px solid #00d7bb;
+    border: 7px solid;
+    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#00f298), to(#07f7f7));
+    -webkit-border-image: -webkit-linear-gradient(left, #00f298 0%, #07f7f7 100%);
+    -o-border-image: -o-linear-gradient(left, #00f298 0%, #07f7f7 100%);
+    border-image: -webkit-gradient(linear, left top, right top, from(#00f298), to(#07f7f7));
+    border-image: linear-gradient(90deg, #00f298 0%, #07f7f7 100%);
+    border-image-slice: 1;
     z-index: 1; }
   .ba-about__photo-img {
     position: relative;
     display: block;
     z-index: 2; }
+  .ba-about__title {
+    background: -moz-linear-gradient(0deg, #00f298 0%, #07f7f7 100%);
+    background: -webkit-linear-gradient(0deg, #00f298 0%, #07f7f7 100%);
+    background: -ms-linear-gradient(0deg, #00f298 0%, #07f7f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #00d7bb;
+    display: table;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1; }
 
 /*# sourceMappingURL=style.css.map */
