@@ -761,59 +761,97 @@ select {
   -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
   transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
 
-.Rectangle_2_copy {
-  background: -moz-linear-gradient(0deg, #00f298 0%, #07f7f7 100%);
-  background: -webkit-linear-gradient(0deg, #00f298 0%, #07f7f7 100%);
-  background: -ms-linear-gradient(0deg, #00f298 0%, #07f7f7 100%); }
-
 .ba-header {
   position: fixed;
   z-index: 10;
   left: 0;
   right: 0;
   top: 0;
-  background: -moz-linear-gradient(0deg, #00f298 0%, #07f7f7 100%);
-  background: -webkit-linear-gradient(0deg, #00f298 0%, #07f7f7 100%);
-  background: -ms-linear-gradient(0deg, #00f298 0%, #07f7f7 100%); }
-  .ba-header__container {
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 1170px; }
-    @media (max-width: 480px) {
-      .ba-header__container {
-        padding: 0; } }
+  background: #22252c; }
 
 .ba-menu {
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .ba-menu__item-cont {
-    width: 12.5%;
-    text-align: center; }
+    width: 20%;
+    text-align: center;
+    padding: 15px 20px; }
     @media (max-width: 768px) {
       .ba-menu__item-cont {
-        width: 25%; } }
+        width: 33%;
+        padding: 10px; } }
   .ba-menu__item {
+    position: relative;
     text-decoration: none;
     color: #fff;
     font-weight: 700;
     display: block;
-    padding: 15px 0; }
-    @media (max-width: 768px) {
-      .ba-menu__item {
-        padding: 7px 0; } }
-    @media (max-width: 480px) {
-      .ba-menu__item {
-        font-size: 10px;
-        padding: 5px 0; } }
-    .ba-menu__item:hover {
-      background-color: #313741; }
+    outline: none;
+    -webkit-perspective: 500px;
+    perspective: 500px; }
+    .ba-menu__item span {
+      position: relative;
+      display: block;
+      padding: 8px 20px 5px;
+      background: #313741;
+      -webkit-box-shadow: inset 0 3px #2f4351;
+      box-shadow: inset 0 3px #2f4351;
+      -webkit-transition: background 0.6s;
+      -moz-transition: background 0.6s;
+      -o-transition: background 0.6s;
+      transition: background 0.6s;
+      -webkit-transform-origin: 50% 0;
+      -moz-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transform-origin: 0% 50%;
+      -moz-transform-origin: 0% 50%;
+      -ms-transform-origin: 0% 50%;
+      transform-origin: 0% 50%; }
+      .ba-menu__item span:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        color: #2f4351;
+        padding: 8px 20px 5px;
+        content: attr(data-hover);
+        -webkit-transform: rotateX(270deg);
+        -moz-transform: rotateX(270deg);
+        transform: rotateX(270deg);
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        transition: -webkit-transform 0.6s;
+        -o-transition: transform 0.6s;
+        transition: transform 0.6s;
+        transition: transform 0.6s, -webkit-transform 0.6s;
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+        pointer-events: none; }
+    .ba-menu__item:hover span,
+    .ba-menu__item:hover span {
+      background: #2f4351; }
+    .ba-menu__item:hover span:before,
+    .ba-menu__item:hover span:before {
+      -webkit-transform: rotateX(10deg);
+      -moz-transform: rotateX(10deg);
+      transform: rotateX(10deg); }
 
 .ba-hero {
   background: #00d7bb url("../img/bg-intro.jpg") 50% no-repeat;
@@ -831,6 +869,9 @@ select {
     justify-content: center;
     min-height: 80vh;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75); }
+    @media (max-width: 768px) {
+      .ba-hero__body {
+        text-align: center; } }
   .ba-hero__hello {
     font-size: 120px;
     line-height: 1;
