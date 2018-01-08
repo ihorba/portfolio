@@ -1,0 +1,217 @@
+@import "normalize";
+@import "layout";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+$body-font: 'Open Sans', sans-serif;;
+$text-color: #fff;
+$secondary-color: #00d7bb;
+$semidark-color: #313741;
+$dark-color: #22252c;
+
+$bp-small: 480px;
+$bp-medium: 768px;
+$bp-large: 960px;
+$bp-xlarge: 1200px;
+
+body{
+	font: 400 14px/1.57 $body-font;
+	color: $text-color;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1170px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.Rectangle_2_copy {
+  background: -moz-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+  background: -webkit-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+  background: -ms-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+
+}
+
+.ba-header {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: -moz-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+	background: -webkit-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+	background: -ms-linear-gradient( 0deg, rgb(0,242,152) 0%, rgb(7,247,247) 100%);
+	&__container {
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 1170px;
+		@media (max-width: $bp-small) {
+			padding: 0;
+		}
+	}
+}
+.ba-nav {
+
+}
+.ba-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+
+
+	&__item-cont {
+		width: 12.5%;
+		text-align: center;
+		@media (max-width: $bp-medium) {
+			width: 25%;
+		}
+	}
+
+	&__item {
+		text-decoration: none;
+		color: $text-color;
+		font-weight: 700;
+		display: block;
+		padding: 15px 0;
+		@media (max-width: $bp-medium) {
+			padding: 7px 0;
+		}
+		@media (max-width: $bp-small) {
+			font-size: 10px;
+			padding: 5px 0;
+		}
+		&:hover {
+			background-color: $semidark-color;
+		}
+	}
+}
+
+.ba-hero {
+	background: $secondary-color url('../img/bg-intro.jpg') 50% no-repeat;
+	background-size: cover;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 80vh;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.75);
+	}
+	&__hello {
+		font-size: 120px;
+		line-height: 1;
+		font-weight: 300;
+		margin: 0;
+	}
+	&__title {
+		font-size: 84px;
+		font-weight: 700;
+		margin: 0 0 12px;
+		line-height: 1;
+	}
+	&__im {
+		font-weight: 300;
+	}
+	&__description {
+		font-size: 28px;
+		margin: 0;
+		line-height: 1;
+	}
+}
+
+.ba-about {
+	background-color: $dark-color;
+	padding: 175px 0 225px;
+	@media (max-width: $bp-medium) {
+		padding: 75px 125px;
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info {
+		width: 50%;
+		@media (max-width: $bp-medium) {
+			width: 100%;
+		}
+	}
+	&__photo {
+		padding-top: 43px;
+	}
+
+	&__photo-cont {
+		position: relative;
+
+	}
+
+	&__photo-cont:before {
+		content: " ";
+		position: absolute;
+		left: 43px;
+		top: -43px;
+		width: 386px;
+		height: 386px;
+		border: 7px solid $secondary-color;
+		z-index: 1;
+	}
+	&__photo-img {
+		position: relative;
+		display: block;
+
+		z-index: 2;
+
+	}
+}
