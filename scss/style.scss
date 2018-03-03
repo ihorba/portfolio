@@ -482,12 +482,14 @@ textarea {
 		margin: 5px 0 10px;
 		color: $secondary-color;
 		font-size: 20px;
-	}
-	&__digree-discription {
-		margin: 5px 0;
 		@media (max-width: $bp-small) {
 			font-size: 15px;
 		}
+
+	}
+	&__digree-discription {
+		margin: 5px 0;
+
 	}
 	&__place {
 		font-size: 18px;

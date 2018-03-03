@@ -1163,11 +1163,11 @@ select {
     margin: 5px 0 10px;
     color: #00d7bb;
     font-size: 20px; }
+    @media (max-width: 480px) {
+      .ba-education__digree {
+        font-size: 15px; } }
   .ba-education__digree-discription {
     margin: 5px 0; }
-    @media (max-width: 480px) {
-      .ba-education__digree-discription {
-        font-size: 15px; } }
   .ba-education__place {
     font-size: 18px;
     margin: 5px 0 10px;
