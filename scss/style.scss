@@ -495,9 +495,7 @@ textarea {
 		font-size: 18px;
 		margin: 5px 0 10px;
 		line-height: 1.3;
-		@media (max-width: $bp-small) {
-			font-size: 13px;
-		}
+
 	}
 	&__end {
 		margin: 50px auto 0;
@@ -505,9 +503,153 @@ textarea {
 		height: 20px;
 		border-radius: 50%;
 		background-color: $secondary-color;
+	}
+}
 
+.ba-skills {
+	background-color: $dark-color;
+	padding: 100px 0 50px;
+	@media (max-width: $bp-medium) {
+		padding: 75px 0 30px;
+	}
+	&__title {
+		margin: 0 auto 100px;
+		@media (max-width: $bp-medium) {
+			margin-bottom: 50px;
+		}
+	}
+	&__body {
+		background-color: $semidark-color;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 50px 0;
+		margin: 0;
+		list-style: none;
+	}
+	&__item {
+		width: 45%;
+		padding-top: 50px;
+		@media (max-width: $bp-medium) {
+			width: 100%;
+		}
+	}
+	&__item-title {
+		margin: 0 0 10px;
+		line-height: 1;
+		font-size: 20px;
+		@media (max-width: $bp-small) {
+			font-size: 14px;
+		}
+	}
+	&__line {
+		height: 6px;
+		background-color: #000;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			height: 6px;
+			left: 0;
+			top: 0;
+			background-color: $secondary-color;
+		}
+	}
+	&__line--html:after {
+		width: 90%;
+	}
+	&__line--js:after {
+		width: 65%;
+	}
+	&__line--css:after {
+		width: 80%;
+	}
+	&__line--wp:after {
+		width: 45%;
+	}
+	&__line--php:after {
+		width: 30%;
+	}
+	&__line--react:after {
+		width: 25%;
+	}
+	&__marker {
+		height: 20px;
+		width: 12px;
+		border-radius: 50%;
+		background-color: $secondary-color;
+		position: absolute;
+		top: -7px;
+	}
+	&__marker--html {
+		left: 90%;
+	}
+	&__marker--js {
+		left: 65%;
+	}
+	&__marker--css {
+		left: 80%;
+	}
+	&__marker--wp {
+		left: 45%;
+	}
+	&__marker--php {
+		left: 30%;
+	}
+	&__marker--react {
+		left: 25%;
+	}
+	&__value {
+		position: absolute;
+		top: -30px;
+		left: -12px;
+		font-size: 20px;
+	}
+}
+.ba-skills-info {
+	padding-top: 100px;
+	@media (max-width: $bp-medium) {
+		padding-top: 60px;
+	}
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__col {
+		width: 33%;
+		background-color: $semidark-color;
+		padding: 30px 30px 60px;
+		cursor: pointer;
+		transition: background-color .5s;
+		margin-bottom: 30px;
+		@media (max-width: $bp-medium) {
+			width: 100%;
+
+		}
 	}
 
+	&__num {
+		font-weight: 700;
+		font-size: 30px;
+		color: #000;
+		margin: 0;
+	}
+	&__title {
+		font-size: 30px;
+		margin: 0;
+		color: $secondary-color;
+	}
+}
+@media (min-width: $bp-medium+1) {
+	.ba-skills-info__col:hover {
+		background-color: $secondary-color;
+		transform: scale(1.05);
+		transition: background-color .5s, transform .5s;
+		.ba-skills-info__title {
+			color: #000;
+		}
+	}
 }
 
 
@@ -519,5 +661,5 @@ textarea {
 
 
 .cbalink {
-    display: none !important;
+	display: none !important;
 }
