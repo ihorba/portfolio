@@ -5,6 +5,8 @@
 	<title>Ihor Kovtun | Frontend Developer</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-TileColor" content="#00d7bb">
+	<meta name="theme-color" content="#00d7bb">
 
 	<meta name="description" content="" />
 	<link rel="icon" href="favicon.png"/>
@@ -12,18 +14,19 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
+
 	<header class="ba-header">
 		<div class="ba-container">
 			<nav class="ba-nav">
 				<ul class="ba-menu">
 					<li class="ba-menu__item-cont">
-						<a href="#" class="ba-menu__item"><span data-hover="WELCOME">WELCOME</span></a>
+						<a href="#ba-hero" class="ba-menu__item active"><span data-hover="WELCOME">WELCOME</span></a>
 					</li>
 					<li class="ba-menu__item-cont">
-						<a href="#" class="ba-menu__item"><span data-hover="ABOUT">ABOUT</span></a>
+						<a href="#ba-about" class="ba-menu__item"><span data-hover="ABOUT">ABOUT</span></a>
 					</li>
 					<li class="ba-menu__item-cont">
-						<a href="#" class="ba-menu__item"><span data-hover="EXPERIENCE">EXPERIENCE</span></a>
+						<a href="#experience" class="ba-menu__item"><span data-hover="EXPERIENCE">EXPERIENCE</span></a>
 					</li>
 					<li class="ba-menu__item-cont">
 						<a href="#" class="ba-menu__item"><span data-hover="PORTFOLIO">PORTFOLIO</span></a>
@@ -35,7 +38,7 @@
 			</nav>
 		</div>
 	</header>
-	<section class="ba-hero">
+	<section class="ba-hero ba-section" id="ba-hero">
 		<div class="ba-container">
 			<div class="ba-hero__body">
 				<p class="ba-hero__hello">Hello!</p>
@@ -45,7 +48,7 @@
 		</div>
 	</section>
 	<main>
-		<section class="ba-about">
+		<section class="ba-about ba-section" id="ba-about">
 			<div class="ba-container">
 				<div class="ba-about__body">
 					<div class="ba-about__photo">
@@ -60,9 +63,9 @@
 							<li class="ba-about-list__item"><span class="ba-about-list__item-name">NAME: </span>Ihor Kovtun</li>
 							<li class="ba-about-list__item"><span class="ba-about-list__item-name">DATE OF BIRTH: </span><time datetime="1991-01-22">22 January 1991</time></li>
 							<li class="ba-about-list__item"><span class="ba-about-list__item-name">NATIONALITY: </span>Ukrainian</li>
-							<li class="ba-about-list__item"><span class="ba-about-list__item-name">ADDRESS: </span>Shevchenk0 5a, Poltava, 36000</li>
-							<li class="ba-about-list__item"><span class="ba-about-list__item-name">PHONE: </span><a href="tel:+38(095)2034865">+38 (095) 203 48 65</a></li>
-							<li class="ba-about-list__item"><span class="ba-about-list__item-name">EMAIL: </span><a href="mailto:ihor.kovtun@beetroot.se">ihor.kovtun@beetroot.se</a></li>
+							<li class="ba-about-list__item"><span class="ba-about-list__item-name">ADDRESS: </span>Poltava, Ukraine, 36000</li>
+							<li class="ba-about-list__item"><span class="ba-about-list__item-name">PHONE: </span><a href="tel:+38(095)2034865" class="ba-about-list__item-link">+38 (095) 203 48 65</a></li>
+							<li class="ba-about-list__item"><span class="ba-about-list__item-name">EMAIL: </span><a href="mailto:ihor.kovtun@beetroot.se" class="ba-about-list__item-link">ihor.kovtun@beetroot.se</a></li>
 						</ul>
 					</div>
 				</div>
@@ -70,7 +73,7 @@
 					<h2 class="ba-interests__title ba-section__title">MY INTERESTS</h2>
 					<ul class="ba-interests__list">
 						<li class="ba-interests__item"><div class="ba-interests__item-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
-							<h4 class="ba-interests__item-title">Courses</h4>
+							<h4 class="ba-interests__item-title">Frontend</h4>
 						</li>
 						<li class="ba-interests__item"><div class="ba-interests__item-icon"><i class="fa fa-futbol-o" aria-hidden="true"></i></div>
 							<h4 class="ba-interests__item-title">Football</h4>
@@ -90,6 +93,184 @@
 					</ul>
 				</div>
 			</div>
+		</section>
+		<section class="ba-education">
+			<!-- BEGIN ba-container  -->
+			<div class="ba-container">
+				<h2 class="ba-section__title ba-education__title">
+					EDUCATION
+				</h2>
+				<!-- ba-education__body -->
+				<div class="ba-education__body">
+					<div class="ba-interests__item-icon ba-education__icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+					<!-- //ba-education__item-list -->
+					<div class="ba-education__items-list">
+						<!-- ba-education__item 1 -->
+						<div class="ba-education__item">
+							<div class="ba-education__item-left-col">
+								<h3 class="ba-education__digree">WORDPRESS DEVELOPER COURSE</h3>
+								<p class="ba-education__digree-discription">
+									<time datetime="2018-09-01">Jan 2018 - May 2018</time>
+								</p>
+
+							</div>
+							<div class="ba-education__item-right-col">
+								<p class="ba-education__place">
+									Beetroot Academy
+								</p>
+								<p class="ba-education__digree-discription">WordPress and WooComerse course</p>
+								<p class="ba-education__digree-discription"></p>
+							</div>
+						</div>
+						<!-- //ba-education__item 1 -->
+						<!-- ba-education__item 2 -->
+						<div class="ba-education__item">
+							<div class="ba-education__item-left-col">
+								<p class="ba-education__place">
+									Beetroot Academy
+								</p>
+								<p class="ba-education__digree-discription">HTML, CSS, JS course</p>
+								<p class="ba-education__digree-discription">Junior Frontend Developer Sertificate</p>
+							</div>
+							<div class="ba-education__item-right-col">
+								<h3 class="ba-education__digree">FRONTEND DEVELOPER COURSE</h3>
+
+								<p class="ba-education__digree-discription">
+									<time datetime="2007-09-01">Sep 2017 - Jan 2018</time>
+								</p>
+							</div>
+						</div>
+						<!-- //ba-education__item 2 -->
+						<!-- ba-education__item 3 -->
+						<div class="ba-education__item">
+							<div class="ba-education__item-left-col">
+								<h3 class="ba-education__digree">MASTER DIGREE</h3>
+								<p class="ba-education__digree-discription">
+									<time datetime="2018-09-01">Sep 2011 - May 2013</time>
+								</p>
+
+							</div>
+							<div class="ba-education__item-right-col">
+								<p class="ba-education__place">
+									East-Ukrainian National University
+								</p>
+								<p class="ba-education__digree-discription">Bachelor degree in Administrative Management speciality</p>
+
+							</div>
+						</div>
+						<!-- //ba-education__item 3 -->
+						<!-- ba-education__item 4 -->
+						<div class="ba-education__item">
+							<div class="ba-education__item-left-col">
+								<p class="ba-education__place">
+									East-Ukrainian National University
+								</p>
+								<p class="ba-education__digree-discription">Bachelor degree in Civil Engineering speciality</p>
+
+							</div>
+							<div class="ba-education__item-right-col">
+								<h3 class="ba-education__digree">BACHALOR DIGREE</h3>
+								<p class="ba-education__digree-discription">
+									<time datetime="2007-09-01">Sep 2007 - May 2011</time>
+								</p>
+
+							</div>
+						</div>
+						<!-- //ba-education__item 4 -->
+					</div>
+					<!-- //ba-education__item-list -->
+					<div class="ba-education__end"></div>
+				</div>
+				<!-- //ba-education__body -->
+			</div>
+			<!-- END ba-container -->
+		</section>
+		<section class="ba-education ba-section ba-education--exp" id="experience">
+			<!-- BEGIN ba-container  -->
+			<div class="ba-container">
+				<h2 class="ba-section__title ba-education__title">
+					EXPERIENCE
+				</h2>
+				<!-- ba-education__body -->
+				<div class="ba-education__body">
+					<div class="ba-interests__item-icon ba-education__icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+					<!-- //ba-education__item-list -->
+					<div class="ba-education__items-list">
+						<!-- ba-education__item 1 -->
+						<div class="ba-education__item">
+							<div class="ba-education__item-left-col">
+								<h3 class="ba-education__digree">FRONTEND DEVELOPER</h3>
+								<p class="ba-education__digree-discription">
+									<time datetime="2018-09-01">Jan 2018 - Current Time</time>
+								</p>
+
+							</div>
+							<div class="ba-education__item-right-col">
+								<p class="ba-education__place">
+									Freelance
+								</p>
+								<p class="ba-education__digree-discription">Over 30 projects experience</p>
+								<p class="ba-education__digree-discription"></p>
+							</div>
+						</div>
+						<!-- //ba-education__item 1 -->
+						<!-- ba-education__item 2 -->
+						<div class="ba-education__item">
+							<div class="ba-education__item-left-col">
+								<p class="ba-education__place">
+									Beetroot Company
+								</p>
+								<p class="ba-education__digree-discription">Forza Football Team Lead</p>
+							</div>
+							<div class="ba-education__item-right-col">
+								<h3 class="ba-education__digree">CONTENT MANAGER</h3>
+								<p class="ba-education__digree-discription">
+									<time datetime="2007-09-01">Oct 2016 - Current Time</time>
+								</p>
+							</div>
+						</div>
+						<!-- //ba-education__item 2 -->
+						<!-- ba-education__item 3 -->
+						<div class="ba-education__item">
+							<div class="ba-education__item-left-col">
+								<h3 class="ba-education__digree">ARMED FORCES</h3>
+								<p class="ba-education__digree-discription">
+									<time datetime="2018-09-01">May 2014 - Feb 2015</time>
+								</p>
+
+							</div>
+							<div class="ba-education__item-right-col">
+								<p class="ba-education__place">
+									Armed Forces of Ukraine
+								</p>
+							</div>
+						</div>
+						<!-- //ba-education__item 3 -->
+						<!-- ba-education__item 4 -->
+						<div class="ba-education__item">
+							<div class="ba-education__item-left-col">
+								<p class="ba-education__place">
+									FC Zorya Lugansk
+								</p>
+								<p class="ba-education__digree-discription">Official Fan Shop administry</p>
+
+							</div>
+							<div class="ba-education__item-right-col">
+								<h3 class="ba-education__digree">ADMINISTRATOR</h3>
+								<p class="ba-education__digree-discription">
+									<time datetime="2007-09-01">Sep 2011 - May 2013</time>
+								</p>
+
+							</div>
+						</div>
+						<!-- //ba-education__item 4 -->
+					</div>
+					<!-- //ba-education__item-list -->
+					<div class="ba-education__end"></div>
+				</div>
+				<!-- //ba-education__body -->
+			</div>
+			<!-- END ba-container -->
 		</section>
 
 	</main>
