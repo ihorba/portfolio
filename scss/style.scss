@@ -61,6 +61,7 @@ input[type="button"],
 input[type="submit"]:hover,
 input[type="button"]:hover,
 .ba-button:hover{
+	display: inline-block;
 	background: $dark-color;
 	border: 2px solid $secondary-color;
 	color: $secondary-color;
@@ -769,7 +770,7 @@ body.safari .ba-section__title{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 40px;
+	font-size: 24px;
 	color: $dark-color;
 	margin-top: 20px;
 }
@@ -806,7 +807,7 @@ body.safari .ba-section__title{
 		margin: 0 auto 75px;
 	}
 	&__slider-1 {
-		max-width: 400px;
+		max-width: 350px;
 		margin: 0 auto 5px;
 	}
 	&__slide-1 {
@@ -917,6 +918,117 @@ body.safari .ba-section__title{
 		color: $dark-color;
 	}
 }
+
+// contact
+.ba-contact {
+	background-color: $dark-color;
+	padding: 100px 0;
+	@media (max-width: $bp-medium) {
+		padding: 50px 0;
+	}
+	&__title {
+		margin: 0 auto 50px;
+	}
+	&__form {
+		display: block;
+		text-align: center;
+	}
+	&__form-top {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	&__form-row {
+		width: 48%;
+		@media (max-width: $bp-medium) {
+			& + & {
+				margin-top: 30px;
+			}
+			width: 100%;
+		}
+		height: 50px;
+		line-height: 50px;
+		background: none;
+		border: none;
+		border-bottom: 2px solid $semidark-color;
+		color: $secondary-color;
+		font-size: 18px;
+		padding-left: 20px;
+		&:focus {
+			outline: none;
+			border-bottom: 2px solid $secondary-color;
+			&::placeholder {
+				transform: translate(50px 50px);
+			}
+		}
+	}
+	&__form-row--textarea {
+		background: none;
+		border: none;
+		resize: none;
+		width: 100%;
+		line-height: 35px;
+		border-bottom: 2px solid $semidark-color;
+		padding-left: 20px;
+		font-size: 18px;
+		color: $secondary-color;
+		margin-bottom: 50px;
+		&:focus {
+			outline: none;
+			border-bottom: 2px solid $secondary-color;
+		}
+	}
+}
+
+.ba-button--contact {
+	padding: 0 50px;
+	font-weight: 600;
+}
+
+.ba-footer {
+	background-color: $semidark-color;
+	padding: 50px 0 25px;
+	&__copyright {
+		text-align: center;
+		border-top: 2px solid $dark-color;
+		padding-top: 30px;
+		color: $secondary-color;
+	}
+}
+.ba-social {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 50px;
+	display: flex;
+	justify-content: center;
+	&__item + &__item {
+		margin-left: 30px;
+	}
+	&__link {
+		display: block;
+		width: 50px;
+		height: 50px;
+		line-height: 48px;
+		background-color: $dark-color;
+		color: $secondary-color;
+		font-size: 22px;
+		text-align: center;
+		border-radius: 50%;
+		border: 1px solid $secondary-color;
+		&:hover {
+			background-color: $secondary-color;
+			color: $dark-color;
+		}
+	}
+	&__link--git {
+		font-size: 30px;
+
+	}
+}
+
+
+
 
 
 .cbalink {
