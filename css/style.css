@@ -1498,12 +1498,18 @@ body.safari .ba-section__title {
     left: 5%;
     font-size: 30px;
     color: #22252c; }
+    @media (max-width: 768px) {
+      .ba-portfolio__work-title {
+        font-size: 24px; } }
   .ba-portfolio__work-subtitle {
     font-size: 18px;
     color: #00d7bb;
     position: absolute;
     bottom: 10%;
     left: 5%; }
+    @media (max-width: 768px) {
+      .ba-portfolio__work-subtitle {
+        font-size: 18px; } }
 
 .ba-portfolio-count {
   text-align: center;
@@ -1710,6 +1716,9 @@ body.safari .ba-section__title {
     font-size: 18px;
     color: #00d7bb;
     margin-bottom: 50px; }
+    @media (max-width: 768px) {
+      .ba-contact__form-row--textarea {
+        margin-bottom: 30px; } }
     .ba-contact__form-row--textarea:focus {
       outline: none;
       border-bottom: 2px solid #00d7bb; }
@@ -1720,7 +1729,7 @@ body.safari .ba-section__title {
 
 .ba-footer {
   background-color: #313741;
-  padding: 50px 0 25px; }
+  padding: 50px 0 15px; }
   .ba-footer__copyright {
     text-align: center;
     border-top: 2px solid #22252c;
@@ -1730,7 +1739,7 @@ body.safari .ba-section__title {
 .ba-social {
   list-style: none;
   padding: 0;
-  margin: 0 0 50px;
+  margin: 0 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

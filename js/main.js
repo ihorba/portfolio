@@ -18,6 +18,8 @@
 				settings: {
 					centerMode: true,
 					slidesToShow: 1,
+					centerPadding: '0px',
+
 				}
 			}
 			]
@@ -107,7 +109,7 @@
 	  	var posDoc = $(this).scrollTop();
 
 	  	$('.ba-section').each(function (index, item) {
-	  		var topHeader = $(this).offset().top - 38;
+	  		var topHeader = $(this).offset().top - 50;
 	  		var botHeader = topHeader + $(this).height();
 
 	  		if (

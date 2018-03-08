@@ -755,6 +755,9 @@ body.safari .ba-section__title{
 		left: 5%;
 		font-size: 30px;
 		color: $dark-color;
+		@media (max-width: $bp-medium) {
+			font-size: 24px;
+		}
 	}
 	&__work-subtitle {
 		font-size: 18px;
@@ -762,6 +765,9 @@ body.safari .ba-section__title{
 		position: absolute;
 		bottom: 10%;
 		left: 5%;
+		@media (max-width: $bp-medium) {
+			font-size: 18px;
+		}
 	}
 }
 
@@ -974,6 +980,9 @@ body.safari .ba-section__title{
 		font-size: 18px;
 		color: $secondary-color;
 		margin-bottom: 50px;
+		@media (max-width: $bp-medium) {
+			margin-bottom: 30px;
+		}
 		&:focus {
 			outline: none;
 			border-bottom: 2px solid $secondary-color;
@@ -988,7 +997,7 @@ body.safari .ba-section__title{
 
 .ba-footer {
 	background-color: $semidark-color;
-	padding: 50px 0 25px;
+	padding: 50px 0 15px;
 	&__copyright {
 		text-align: center;
 		border-top: 2px solid $dark-color;
@@ -999,7 +1008,7 @@ body.safari .ba-section__title{
 .ba-social {
 	list-style: none;
 	padding: 0;
-	margin: 0 0 50px;
+	margin: 0 0 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -1028,7 +1037,6 @@ body.safari .ba-section__title{
 	}
 	&__link--git {
 		font-size: 30px;
-
 	}
 }
 
