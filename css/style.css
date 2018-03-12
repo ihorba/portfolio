@@ -1605,6 +1605,9 @@ body.safari .ba-section__title {
   .ba-testimonials__client-name {
     margin: 0; }
 
+.ba-testimonials__client {
+  border-radius: 50%; }
+
 .ba-hireme {
   background-color: #00d7bb;
   padding: 50px 0; }
